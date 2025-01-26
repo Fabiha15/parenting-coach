@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# The Parenting Coach
 
-## Getting Started
+**The Parenting Coach** is an AI-powered platform designed to assist users with parenting-related questions. Using advanced AI technology and contextual understanding, it provides helpful and insightful answers to guide parents through their journey.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
+- AI-generated responses to parenting questions.
+- Contextual answers based on a curated parenting guide.
+- Advanced similarity search to retrieve relevant information.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## How It Works
+1. A parenting guide PDF is uploaded to a vector database (Pinecone) using an embedding method.
+2. When a user asks a question, the vector database performs a similarity search to retrieve the most relevant context from the guide.
+3. The retrieved context is used by the AI (powered by OpenAI and LangChain) to generate tailored responses.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+---
 
-## Learn More
+## Running the Application Locally
+To run the application locally, follow these steps:
 
-To learn more about Next.js, take a look at the following resources:
+1. Clone the repository and navigate to the project folder.
+2. Install dependencies using:
+   ```bash
+   yarn
+3. Start the development server:
+   yarn dev
+4. Open your browser and go to:
+   http://localhost:3000
+   
+⚠️ Important Note:
+The application requires an OpenAI API key to function. Since the API key is not included in this repository for security reasons, the application will not work without it.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Tech Stack
+LangChain: Used to process and structure the flow of retrieved context and AI-generated responses. It ensures that the retrieved data is seamlessly integrated into the AI's conversational responses.
+Pinecone: A vector database that powers the efficient similarity search for retrieving relevant sections of the parenting guide.
+OpenAI: Provides the language model used to generate intelligent and insightful responses.
+ShadCN UI: A modern UI library used to create a visually appealing and user-friendly interface for the application. It ensures that users have a smooth and engaging experience when interacting with The Parenting Coach.
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
