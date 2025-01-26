@@ -36,9 +36,9 @@ The application requires an OpenAI API key to function. Since the API key is not
 ---
 
 ## Tech Stack
-LangChain: Used to process and structure the flow of retrieved context and AI-generated responses. It ensures that the retrieved data is seamlessly integrated into the AI's conversational responses.
-Pinecone: A vector database that powers the efficient similarity search for retrieving relevant sections of the parenting guide.
-OpenAI: Provides the language model used to generate intelligent and insightful responses.
+- LangChain: Used to process and structure the flow of retrieved context and AI-generated responses. It ensures that the retrieved data is seamlessly integrated into the AI's conversational responses.
+- Pinecone: A vector database that powers the efficient similarity search for retrieving relevant sections of the parenting guide.
+- OpenAI: Provides the language model used to generate intelligent and insightful responses.
 ShadCN UI: A modern UI library used to create a visually appealing and user-friendly interface for the application. It ensures that users have a smooth and engaging experience when interacting with The Parenting Coach.
 
 ---
