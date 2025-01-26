@@ -44,7 +44,7 @@ ShadCN UI: A modern UI library used to create a visually appealing and user-frie
 ---
 
 ## Hosted Version
-This application is hosted online
+This application is hosted online https://parenting-coach-green.vercel.app/
 
 ---
 
