@@ -41,4 +41,16 @@ Pinecone: A vector database that powers the efficient similarity search for retr
 OpenAI: Provides the language model used to generate intelligent and insightful responses.
 ShadCN UI: A modern UI library used to create a visually appealing and user-friendly interface for the application. It ensures that users have a smooth and engaging experience when interacting with The Parenting Coach.
 
+---
+
+## Hosted Version
+This application is hosted online
+
+---
+
+## Contact
+For inquiries or feedback, feel free to reach out at: fabihakhan1999@gmail.com
+
+---
+
 
